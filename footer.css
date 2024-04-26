@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-* {
-	font-family: Roboto Mono;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .footer-container {
 	display: flex;
-    padding-top: 80px;    
+	padding-top: 80px;
+	justify-content: center;
 }
 .footer-item {
-	flex: 1;
 	text-align: center;
+	padding: 0px 20px 0px 20px;
 }
 .icon-tray {
 	margin-top: 0px;
@@ -23,10 +22,44 @@
 	margin-left: 7px;
 	margin-right: 7px;
 }
+.logo-icon {
+	max-width: 25%;
+}
 .about-us {
-    text-align: start;
+	text-align: start;
+	max-width: 35%;
+}
+.facebook-iframe {
+	max-width: 35%;
+}
+.about-us h2 {
+	font-family: Montserrat, sans-serif;
+}
+.about-us p {
+	font-family: Roboto, sans-serif;
+}
+.info {
+	display: flex;
+	align-items: center;
+}
+.info a {
+	text-decoration: none;
+	color: rgb(1, 138, 224);
+}
+.info p {
+	margin-left: 8px;
 }
 .credit {
-    padding-bottom: 80px;
-    background-image: url(images/footer-partern.png);
+	padding-bottom: 80px;
+	background-image: url(images/footer-partern.png);
+}
+.credit h5 {
+	font-size: 13px;
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	color: rgb(111, 111, 111);
+}
+.credit a {
+	text-decoration: none;
+	color: rgb(1, 138, 224);
 }
