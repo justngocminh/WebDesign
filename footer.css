@@ -18,6 +18,9 @@
 	align-items: center;
 	justify-content: center;
 }
+.icon-tray svg {
+	padding: 10px 6px 0px 6px;
+}
 .icon {
 	margin-left: 7px;
 	margin-right: 7px;
