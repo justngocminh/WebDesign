@@ -8,10 +8,3 @@ window.addEventListener("scroll", function () {
 		}
 	}
 });
-window.addEventListener("scroll", function () {
-	var main = this.document.querySelector(".main-nav");
-	var mainBounding = main.getBoundingClientRect();
-	if (mainBounding.top < 0) {
-		main.classList.add("fixed");
-	}
-});
