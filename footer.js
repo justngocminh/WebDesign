@@ -1,4 +1,4 @@
-function slideInOnScroll() {
+window.addEventListener("scroll", function () {
 	var elements = document.querySelectorAll(".animate");
 
 	for (var i = 0; i < elements.length; i++) {
@@ -11,8 +11,4 @@ function slideInOnScroll() {
 			element.classList.add("animated");
 		}
 	}
-}
-
-window.addEventListener("scroll", slideInOnScroll);
-
-slideInOnScroll();
+});
