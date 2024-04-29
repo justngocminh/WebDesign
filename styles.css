@@ -394,34 +394,46 @@ a {
 #nhan-nuoi-a a:hover {
 	background-color: #007bff;
 }
+
 /* counter */
 #counter img {
 	padding-top: 40px;
 	width: 100%;
 	max-width: 20%;
 }
+
 #counter h5 {
 	margin: 10px 0px 10px 0px;
 }
+
 #counter .col-3 {
 	align-items: center;
 	text-align: center;
 }
+
 /* tin tuc */
+#tin-tuc {
+	padding: 40px 0px 40px 0px;
+}
+
 #tin-tuc .heading {
 	text-align: center;
 	margin-bottom: 40px;
 }
+
 #tin-tuc h5 {
 	text-transform: capitalize;
 }
+
 #tin-tuc img {
 	width: 100%;
 	max-width: 100%;
 }
+
 #doc-them {
 	text-align: center;
 }
+
 #doc-them a {
 	text-transform: uppercase;
 	font-weight: 600;
@@ -431,24 +443,34 @@ a {
 #doc-them a:hover {
 	background-color: #007bff;
 }
+
 /* tai tro */
-#tai-tro img {
-	width: 100%;
-	max-width: 100%;
+#tai-tro {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f6f6f6;
 }
+
+#tai-tro .col-3 {
+	text-align: center;
+}
+
 #tai-tro .heading {
 	text-align: center;
 	margin-bottom: 40px;
 }
+
 #tai-tro h5 {
 	text-transform: capitalize;
 	text-align: center;
 }
+
 #tai-tro img {
 	border-radius: 1rem;
 	width: 100%;
-	max-width: 100%;
+	max-width: 80%;
 }
+
 /* ung ho */
 .col-9 {
 	flex: 0 0 100%;
@@ -456,6 +478,7 @@ a {
 	padding-right: 15px;
 	padding-left: 15px;
 }
+
 #ung-ho {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -463,22 +486,27 @@ a {
 	background-size: cover;
 	background-position: center;
 }
+
 #ung-ho h2 {
 	color: white;
 	text-transform: capitalize;
 }
+
 #ung-ho a {
 	text-transform: uppercase;
 	font-weight: 600;
 	background-color: #007bff;
 }
+
 #ung-ho a:hover {
 	background-color: #fc0;
 }
+
 #ung-ho .col-3 {
 	display: flex;
 	align-items: center;
 }
+
 /* footer */
 .footer-container {
 	padding-top: 80px;
