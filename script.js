@@ -8,18 +8,3 @@ window.addEventListener("scroll", function () {
 		}
 	}
 });
-
-function addShadowEffect() {
-	document.querySelectorAll(".card").forEach((box) => {
-		box.addEventListener("mouseover", () => {
-			box.querySelector(".card-info").classList.toggle("shadow-effect");
-			box.querySelector(".pic").classList.toggle("tilt");
-		});
-		box.addEventListener("mouseout", () => {
-			box.querySelector(".card-info").classList.toggle("shadow-effect");
-			box.querySelector(".pic").classList.toggle("tilt");
-		});
-	});
-}
-
-addShadowEffect();
