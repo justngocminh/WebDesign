@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Index</title>
+		<title>Nhận nuôi thú cưng - Home4Pet</title>
+		<link rel="icon" href="images/favicon-removebg-preview.png">
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="header-footer-comp\header-and-footer.css" />
 		<script
 			src="https://kit.fontawesome.com/e549568af1.js"
 			crossorigin="anonymous"
@@ -19,6 +21,7 @@
 		/>
 	</head>
 	<body>
+		<!-- Cop header từ đây -->
 		<!-- Header -->
 		<header>
 			<!--Navbar-->
@@ -106,37 +109,51 @@
 		</header>
 		<!--Filler cho navbar-->
 		<div class="filler"></div>
+		<!-- Cho đến đây -->
+
 		<!-- Carousel -->
 		<div id="carousel1" class="owl-carousel owl-theme owl-loaded">
 			<div class="owl-stage-outer">
 				<div class="owl-stage">
 					<div
 						class="owl-item"
-						style="
-							background-image: url(images/slide-2-257.jpg);
-							height: 500px;
-							background-size: cover;
-						"
+						style="background-image: url(images/slide1.jpg)"
 					>
 						<div class="item"><h1>xin chào</h1></div>
 					</div>
 					<div
 						class="owl-item"
-						style="
-							background-image: url(images/slide-3-91.jpg);
-							height: 500px;
-							background-size: cover;
-						"
+						style="background-image: url(images/slide2.jpg)"
 					>
 						<div class="item"><h1>xin chào</h1></div>
 					</div>
 					<div
 						class="owl-item"
-						style="
-							background-image: url(images/slide-4-910.jpg);
-							height: 500px;
-							background-size: cover;
-						"
+						style="background-image: url(images/slide3.jpg)"
+					>
+						<div class="item"><h1>xin chào</h1></div>
+					</div>
+					<div
+						class="owl-item"
+						style="background-image: url(images/slide4.jpeg)"
+					>
+						<div class="item"><h1>xin chào</h1></div>
+					</div>
+					<div
+						class="owl-item"
+						style="background-image: url(images/slide5.jpeg)"
+					>
+						<div class="item"><h1>xin chào</h1></div>
+					</div>
+					<div
+						class="owl-item"
+						style="background-image: url(images/slide6.jpeg)"
+					>
+						<div class="item"><h1>xin chào</h1></div>
+					</div>
+					<div
+						class="owl-item"
+						style="background-image: url(images/slide7.jpeg)"
 					>
 						<div class="item"><h1>xin chào</h1></div>
 					</div>
@@ -378,22 +395,22 @@
 					<div class="col-3">
 						<img src="images/heart.png" alt="" />
 						<h5>2349</h5>
-						<h5>Ca Cứu Hộ</h5>
+						<p>Ca Cứu Hộ</p>
 					</div>
 					<div class="col-3">
 						<img src="images/heart.png" alt="" />
 						<h5>984</h5>
-						<h5>Đã Có Chủ</h5>
+						<p>Đã Có Chủ</p>
 					</div>
 					<div class="col-3">
 						<img src="images/heart.png" alt="" />
 						<h5>311</h5>
-						<h5>Chờ Tìm Chủ</h5>
+						<p>Chờ Tìm Chủ</p>
 					</div>
 					<div class="col-3">
 						<img src="images/heart.png" alt="" />
 						<h5>139</h5>
-						<h5>Chưa Sẵn Sàng Tìm Chủ</h5>
+						<p>Chưa Sẵn Sàng Tìm Chủ</p>
 					</div>
 				</div>
 			</div>
@@ -493,6 +510,8 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Footer từ đây -->
 		<!--Footer-->
 		<footer>
 			<div class="footer-container">
@@ -525,13 +544,13 @@
 				</div>
 				<div class="footer-item animate about-us">
 					<h2 class="about-us-header" style="margin-top: 0%">Về chúng tôi</h2>
-					<hr style="max-width: 90px; margin-left: 0px" />
+					<hr />
 					<p style="color: rgb(111, 111, 111)">
 						Nhóm trẻ tình nguyện viên Việt Nam và quốc tế, hoạt động vì tình yêu
 						chó mèo.
 					</p>
 					<h2>Thông tin liên hệ</h2>
-					<hr style="max-width: 90px; margin-left: 0px" />
+					<hr />
 					<div class="contact-info">
 						<div class="info">
 							<i class="fa-solid fa-phone fa-lg" style="color: #8b8b8b"></i>
@@ -574,10 +593,14 @@
 				</h5>
 			</div>
 		</footer>
+		<!-- Cho đến đây -->
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script src="script.js"></script>
+		<script src="header-footer-comp\header-and-footer.js"></script>
 		<script>
+			// Của owl-carousel
 			$(document).ready(function () {
 				$("#carousel1").owlCarousel({
 					loop: true,
@@ -599,6 +622,8 @@
 				});
 			});
 		</script>
+
+		<!-- Chỉnh độ cao của filler -->
 		<script>
 			function setFillerHeight() {
 				const mainWrapperHeight =
@@ -609,6 +634,22 @@
 
 			window.addEventListener("load", setFillerHeight);
 			window.addEventListener("resize", setFillerHeight);
+		</script>
+
+		<!-- Chỉnh độ cao của carousel  -->
+		<script>
+			function adjustCarouselItemsHeight() {
+				const items = document.querySelectorAll(".owl-item");
+				const viewportWidth = window.innerWidth;
+				const itemHeight = (4 / 9) * viewportWidth;
+
+				items.forEach((item) => {
+					item.style.height = itemHeight + "px";
+				});
+			}
+
+			window.addEventListener("load", adjustCarouselItemsHeight);
+			window.addEventListener("resize", adjustCarouselItemsHeight);
 		</script>
 	</body>
 </html>
