@@ -1,4 +1,4 @@
-// footer animation 
+// footer animation
 window.addEventListener("scroll", function () {
 	var elements = document.querySelectorAll(".animate");
 	for (var i = 0; i < elements.length; i++) {
@@ -16,7 +16,7 @@ function hamburgerClicked() {
 	navnav.classList.toggle("active");
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 	var hamburger = document.querySelector(".hamburger");
 	hamburger.addEventListener("click", hamburgerClicked);
 });
