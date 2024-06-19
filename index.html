@@ -56,7 +56,7 @@
 				<div class="main-nav">
 					<div class="main-wrapper">
 						<div id="main-logo">
-							<a href=""><img src="images/Home4Pet.png" alt="lolo" style="height: 95px" /></a>
+							<a href=""><img src="images/Home4Pet.png" alt="logo" style="height: 95px" /></a>
 						</div>
 						<div class="hamburger">
 							<div class="line"></div>
@@ -85,7 +85,7 @@
 
 	<!-- Carousel -->
 	<swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
-		css-mode="true" autoplay-delay="2500" autoplay-disable-on-interaction="true" loop="true">
+		css-mode="true" autoplay-delay="4000" autoplay-disable-on-interaction="true" loop="true">
 		<swiper-slide style="background-image: url(images/slide7.jpeg)">
 			<div class="item">
 				<h1>Những chú chó cần được nhận nuôi</h1>
@@ -186,7 +186,7 @@
 				<div class="cot-thong-tin">
 					<div class="the">
 						<div class="text">
-							<div class="icon">
+							<div class="info-icon">
 								<img src="images/anh-thong-tin-1.jpg" alt="meo-trong-coc" />
 							</div>
 							<h3>Ủng hộ</h3>
@@ -203,7 +203,7 @@
 				<div class="cot-thong-tin">
 					<div class="the">
 						<div class="text">
-							<div class="icon">
+							<div class="info-icon">
 								<img src="images/anh-thong-tin-2.jpg" alt="con-meo-vang" />
 							</div>
 							<h3>Tình nguyện</h3>
@@ -219,7 +219,7 @@
 				<div class="cot-thong-tin">
 					<div class="the">
 						<div class="text">
-							<div class="icon">
+							<div class="info-icon">
 								<img src="images/anh-thong-tin-3.jpg" alt="hai-vo-chong" />
 							</div>
 							<h3>Nhận nuôi</h3>
@@ -369,23 +369,23 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
-					<img src="images/heart.png" alt="" />
-					<h5>2349</h5>
+					<img src="images/adoption.png" alt="adoption" />
+					<h5 class="number" data-count="2349">2349</h5>
 					<p>Ca Cứu Hộ</p>
 				</div>
 				<div class="col-3">
-					<img src="images/heart.png" alt="" />
-					<h5>984</h5>
+					<img src="images/pet-care.png" alt="pet-care" />
+					<h5 class="number" data-count="984">984</h5>
 					<p>Đã Có Chủ</p>
 				</div>
 				<div class="col-3">
-					<img src="images/heart.png" alt="" />
-					<h5>311</h5>
+					<img src="images/telephone-call.png" alt="telephone-call" />
+					<h5 class="number" data-count="311">311</h5>
 					<p>Chờ Tìm Chủ</p>
 				</div>
 				<div class="col-3">
-					<img src="images/heart.png" alt="" />
-					<h5>139</h5>
+					<img src="images/world-animal-day.png" alt="world-animal-day" />
+					<h5 class="number" data-count="139">139</h5>
 					<p>Chưa Sẵn Sàng Tìm Chủ</p>
 				</div>
 			</div>
@@ -559,14 +559,14 @@
 		<div class="credit">
 			<h5 class="animate">
 				Copyright 2024 / Được tạo bởi
-				<a href="#">Home4Pet<3< /a>
+				<a href="#">Home4Pet</a>
 			</h5>
 		</div>
 	</footer>
 	<!-- Cho đến đây -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+	<script src="script.js" defer></script>
 	<script src="header-footer-comp\header-and-footer.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
@@ -615,6 +615,47 @@
 
 		window.addEventListener("load", adjustCarouselItemsHeight);
 		window.addEventListener("resize", adjustCarouselItemsHeight);
+	</script>
+	<script>
+		// Hàm đếm số
+		function countUp(element) {
+			let start = 0;
+			const end = parseInt(element.getAttribute('data-count'), 10);
+			const duration = 4000; // thời gian đếm (ms)
+			const increment = Math.ceil(end / (duration / 16)); // tính toán bước nhảy
+
+			function updateCounter() {
+				start += increment;
+				if (start >= end) {
+					element.textContent = end;
+				} else {
+					element.textContent = start;
+					requestAnimationFrame(updateCounter);
+				}
+			}
+
+			requestAnimationFrame(updateCounter);
+		}
+
+		// Intersection Observer
+		const observerOptions = {
+			threshold: 0.5 // 50% phần tử trong khung nhìn
+		};
+
+		const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					countUp(entry.target);
+					observer.unobserve(entry.target); // Ngừng quan sát sau khi đếm
+				}
+			});
+		}, observerOptions);
+
+		// Lấy tất cả các phần tử với lớp .counter
+		document.querySelectorAll('.number').forEach(counter => {
+			observer.observe(counter);
+		});
+
 	</script>
 </body>
 

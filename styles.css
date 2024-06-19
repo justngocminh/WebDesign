@@ -231,6 +231,7 @@ swiper-slide a {
 	border: solid white 10px;
 	border-radius: 50%;
 	height: 160px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #thong-tin h3 {
@@ -319,7 +320,7 @@ swiper-slide a {
 	color: #222;
 }
 
-#be-ngoan-trong-tuan a {
+#be-ngoan-trong-tuan a .btn {
 	text-transform: uppercase;
 	font-weight: 600;
 	background-color: #d61c62;
@@ -403,7 +404,7 @@ swiper-slide a {
 #counter img {
 	padding-top: 40px;
 	width: 100%;
-	max-width: 20%;
+	max-width: 40%;
 }
 
 #counter h5 {
