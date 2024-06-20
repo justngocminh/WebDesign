@@ -408,7 +408,7 @@ a {
     background-image: url(images/jumbotron-volunteer.jpg);
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: multiply;
     display: flex;
     align-items: center;
@@ -436,13 +436,237 @@ a {
     }
 }
 
-#jumbotron p {
-    margin: 10px 0 10px 40px;
+#jumbotron .link {
+    display: flex;
+}
+
+#jumbotron a {
+    margin: 10px 0px 10px 40px;
     padding-left: 20px;
+    padding-right: 5px;
+    width: fit-content;
+    color: white;
+    font-family: "Roboto";
+    background-color: #d61c62;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+}
+
+#jumbotron p {
+    margin: 10px 0px 10px 0px;
     padding-right: 20px;
     width: fit-content;
     color: white;
     background-color: #d61c62;
-    border-radius: 5px;
-    font-size: 16px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* các cột  */
+.container {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-9 {
+    flex: 0 0 100%;
+    max-width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-3 {
+    flex: 0 0 100%;
+    max-width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-4 {
+    flex: 0 0 100%;
+    max-width: 33.3333333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-8 {
+    flex: 0 0 100%;
+    max-width: 66.6666666666%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Gioi thieu  */
+
+#gioithieu {
+    padding: 45px 15px 45px 15px;
+}
+
+#gioithieu h1 {
+    font-size: 34px;
+}
+
+#gioithieu img {
+    max-width: 100%;
+}
+
+#gioithieu hr {
+    margin-left: 0px;
+    max-width: 300px;
+    width: 100%;
+}
+
+#gioithieu .picture {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    #gioithieu h1 {
+        font-size: 32px;
+    }
+
+    .row {
+        display: block;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+/* thong tin  */
+
+#thong-tin {
+    background-color: rgb(246, 246, 246);
+    padding: 45px 15px 45px 15px;
+}
+
+#thong-tin img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 500%;
+}
+
+#thong-tin .picture {
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#thong-tin .col-12 {
+    margin-top: 48px;
+}
+
+.col-1 {
+    flex: 0 0 100%;
+    max-width: 8.3333333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-11 {
+    flex: 0 0 100%;
+    max-width: 91.6666666666%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#thong-tin hr {
+    max-width: 80%;
+}
+
+#thong-tin ul {
+    background-color: rgb(221, 221, 221);
+    border-radius: 20px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+#thong-tin li {
+    align-items: center;
+}
+
+#thong-tin p {
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+#thong-tin .tham-gia {
+    margin-top: 48px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    background-image: url(images/adopt-calltoaction.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.tham-gia h4 {
+    text-transform: uppercase;
+}
+
+.tham-gia a {
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 1.3rem;
+    transition: background-color 0.3s ease;
+    background-color: #0189e0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.tham-gia a:hover {
+    background-color: #fc0;
+}
+
+.hoat-dong a {
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 1.3rem;
+    transition: background-color 0.3s ease;
+    background-color: #d61c62;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hoat-dong a:hover {
+    background-color: #0189e0;
 }
