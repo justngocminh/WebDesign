@@ -1,0 +1,121 @@
+/* global */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+#ptung-ho p {
+    font-size: 9px;
+}
+#ptung-ho h3,
+h4{
+    margin: 0;
+}
+#ptung-ho .heading {
+	text-align: center;
+	margin-bottom: 40px;
+}
+#ptung-ho h2 {
+	color: #222;
+	font-size: 2.125rem;
+	font-weight: 600;
+	font-family: Montserrat;
+}
+
+#ptung-ho .container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+}
+
+#ptung-ho .item{
+    --color: #eb904b;
+    width: 185px;
+    background-color: var(--color);
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-shadow: 
+    #3c40434d 0px 1px 2px 0px,
+    #3c40434d 0px 1px 2px 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+#ptung-ho .item::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 2;
+    height: 80%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--color);
+    border-width: 40px 40px 40px 40px;
+    filter: drop-shadow(5px 0 4px #00000094);
+    transition: filter .5s
+}
+
+#ptung-ho .item:nth-child(2){
+    --color: #813085;
+}
+#ptung-ho .item:nth-child(3){
+    --color: #0b7836 ;
+}
+#ptung-ho .layer{
+    background-color: #f2f2f2;
+    border: 1px solid #fff;
+    border-radius: inherit;
+    padding: 20px;
+    box-shadow: 
+    #00000012 0px 1px 2px,
+    #00000012 0px 2px 4px,
+    #00000012 0px 4px 8px,
+    #00000012 0px 8px 16px,
+    #00000012 0px 16px 32px,
+    #00000012 0px 32px 64px;
+    position: relative;
+    left: 10px;
+    transition: left 1s;
+}
+#ptung-ho h3{
+    font-weight: 700;
+    text-align: center;
+    color: var(--color);
+}
+#ptung-ho h4{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+#ptung-ho p{
+    color: #555;
+}
+#ptung-ho span{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: var(--color);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    box-shadow: 
+    #00000012 0px 1px 2px,
+    #00000012 0px 2px 4px,
+    #00000012 0px 4px 8px,
+    #00000012 0px 8px 16px,
+    #00000012 0px 16px 32px,
+    #00000012 0px 32px 64px;
+    font-size: 14px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+#ptung-ho .item:hover::after{
+    filter: drop-shadow(5px 0 4px #0000001a);
+}
+#ptung-ho .item:hover .layer{
+    left: 50px;
+}
