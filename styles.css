@@ -77,7 +77,7 @@ a {
 
 /* carousel */
 
-swiper-slide {
+#carousel swiper-slide {
 	width: 100vw;
 	background-position: center;
 	background-size: cover;
@@ -86,40 +86,40 @@ swiper-slide {
 	height: 370px;
 }
 
-swiper-slide h1 {
+#carousel swiper-slide h1 {
 	font-size: 34px;
 	color: white;
 	font-weight: 600;
 }
 
-swiper-slide p {
+#carousel swiper-slide p {
 	font-family: "Montserrat";
 	font-size: 16px;
 	color: white;
 	font-weight: 600;
 }
 
-swiper-slide a {
+#carousel swiper-slide a {
 	text-transform: uppercase;
 	font-weight: 600;
 	background-color: #d61c62;
 }
 
 @media (max-width: 1000px) {
-	swiper-slide h1 {
+	#carousel swiper-slide h1 {
 		font-size: 30px;
 		color: white;
 		font-weight: 600;
 	}
 
-	swiper-slide p {
+	#carousel swiper-slide p {
 		font-family: "Montserrat";
 		font-size: 12px;
 		color: white;
 		font-weight: 600;
 	}
 
-	swiper-slide a {
+	#carousel swiper-slide a {
 		text-transform: uppercase;
 		font-weight: 600;
 		background-color: #d61c62;
@@ -326,7 +326,7 @@ swiper-slide a {
 	background-color: #d61c62;
 }
 
-#be-ngoan-trong-tuan a:hover {
+#be-ngoan-trong-tuan .btn:hover {
 	background-color: #007bff;
 }
 
