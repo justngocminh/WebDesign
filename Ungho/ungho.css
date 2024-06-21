@@ -448,8 +448,8 @@ body {
 #ptung-ho p {
     font-size: 14px;
 }
-#ptung-ho h3,
-h4{
+
+#ptung-ho h3, h4{
     margin: 0;
 }
 #ptung-ho .heading {
@@ -526,6 +526,7 @@ h4{
     font-weight: 700;
     text-align: center;
     color: var(--color);
+	font-size: 25px;
 }
 #ptung-ho h4{
     color: #fff;
