@@ -86,7 +86,7 @@ body {
 #banner {
 	padding-top: 50px;
 	padding-bottom: 220px;
-	background-image: url(anhlienhe/bannercontact.jpeg);
+	background-image: url(images/bannercontact.jpeg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -204,7 +204,7 @@ body {
 }
 
 #form-lien-he .tt-lien-he a {
-    color: #5005ff;
+    color: #000000;
     text-decoration: none;
 }
 #form-lien-he .tt-lien-he a:hover{
@@ -386,7 +386,6 @@ h4{
     font-weight: 700;
     text-align: center;
     color: var(--color);
-	font-size: 25px;
 }
 #ptung-ho h4{
     color: #fff;
@@ -486,7 +485,7 @@ h4{
 #Xem-thong-tin-manh-thuong-quan {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-image: url(anhlienhe/ds-mtq.jpg);
+	background-image: url(ds-mtq.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -540,34 +539,4 @@ h4{
 	border: 1px solid transparent;
 	border-radius: 1.3rem;
 	transition: background-color 0.3s ease;
-}
-
-/* back to top */
-#back-to-top {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	width: 50px;
-	height: 50px;
-	background-color: #007bff;
-	color: white;
-	border-radius: 50%;
-	text-decoration: none;
-	text-align: center;
-	line-height: 50px;
-	transition: opacity 0.3s, background-color 0.3s;
-	z-index: 1000;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#back-to-top i {
-	font-size: 24px;
-	vertical-align: middle;
-	display: inline-block;
-}
-
-#back-to-top:hover {
-	opacity: 0.8;
-	background-color: #0056b3;
 }
