@@ -569,7 +569,6 @@ a {
 
 #thong-tin .picture {
     display: flex;
-    border-radius: 50%;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -669,4 +668,34 @@ a {
 
 .hoat-dong a:hover {
     background-color: #0189e0;
+}
+
+/* back to top */
+#back-to-top {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #007bff;
+    color: white; 
+    border-radius: 50%; 
+    text-decoration: none; 
+    text-align: center; 
+    line-height: 50px; 
+    transition: opacity 0.3s, background-color 0.3s;
+    z-index: 1000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#back-to-top i {
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#back-to-top:hover {
+    opacity: 0.8; 
+    background-color: #0056b3; 
 }

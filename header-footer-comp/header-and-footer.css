@@ -1,3 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #6f6f6f;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.8125rem;
+    line-height: 1.1em;
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    color: #222;
+    font-size: 2.125rem;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.125rem;
+    color: #222;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #222;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3125rem;
+    font-weight: 600;
+}
+
+h6 {
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
 /* header */
 .nav-container {
     z-index: 999;
@@ -180,18 +256,20 @@
     padding: 0px 20px 0px 20px;
 }
 
-.animate {
+/* hoạt ảnh footer */
+
+.fade-in-up {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.animate.animated {
-    text-align: start;
-    padding: 0px 20px 0px 20px;
+.fade-in-up.visible {
     opacity: 1;
-    transition: opacity 1s ease-in, transform 1s ease-in;
-    transform: translateY(0px);
+    transform: translateY(0);
 }
+
+/* end */
 
 .icon-tray {
     margin-top: 8px;
@@ -293,12 +371,15 @@
         margin-left: -15px;
     }
 
-    .animate.animated {
-        text-align: center;
-        padding: 0px 20px 0px 20px;
+    .fade-in-up {
         opacity: 1;
-        transition: opacity 1s ease-in, transform 1s ease-in;
-        transform: translateY(0px);
+        transform: translateY(40px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in-up.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .footer-item {

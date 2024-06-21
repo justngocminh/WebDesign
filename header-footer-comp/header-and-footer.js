@@ -1,14 +1,33 @@
-// footer animation
-window.addEventListener("scroll", function () {
-	var elements = document.querySelectorAll(".animate");
-	for (var i = 0; i < elements.length; i++) {
-		var element = elements[i];
-		var bounding = element.getBoundingClientRect();
-		if (bounding.top >= 0) {
-			element.classList.add("animated");
+// Lấy tất cả các phần tử có lớp fade-in-up
+const fadeInUpElements = document.querySelectorAll(".fade-in-up");
+
+// Kiểm tra xem phần tử có nằm trong khung nhìn không
+function isInViewport(element) {
+	const rect = element.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+	);
+}
+
+// function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//         rect.top < window.innerHeight && rect.bottom > 0
+//     );
+// }
+
+// Hàm kích hoạt hiệu ứng
+function handleScroll() {
+	fadeInUpElements.forEach((element) => {
+		if (isInViewport(element)) {
+			element.classList.add("visible");
 		}
-	}
-});
+	});
+}
+
+window.addEventListener("scroll", handleScroll);
+document.addEventListener("DOMContentLoaded", handleScroll);
 
 // nav nav animation
 function hamburgerClicked() {
