@@ -557,7 +557,7 @@ h4{
     bottom: 5px;
 }
 #ptung-ho .item:hover::after{
-    filter: drop-shadow(5px 0 4px #0000001a);
+    filter: drop-shadow(5px 0 4px #1409091a);
 }
 #ptung-ho .item:hover .layer{
     left: 50px;

@@ -158,9 +158,9 @@
 					    <br />
 					    <br />
 					    🗳️ Địa điểm đặt hòm quyên góp: 
-                        <br />Better World Hanoi số 8 Xuân Diệu Hà Nội
+                        <br />Tòa nhà thế kỉ, 559 P. Kim Ngưu, Vĩnh Tuy, Hai Bà Trưng, Hà Nội
 					    <br />
-					    Phòng khám Animal Care: nhà 20 ngõ 424 Thuỵ Khuê
+					    Phòng khám BAV: 12 P. Chùa Bộc, Quang Trung, Đống Đa, Hà Nội
 
 					</p>
 				</div>
@@ -526,25 +526,6 @@
 <script src="header-footer-comp\header-and-footer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-<!-- Swiper -->
-<script>
-    const swiper = new Swiper(".mySwiper", {
-        // Optional parameters
-        direction: "vertical",
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: ".swiper-pagination",
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
 <!-- Chỉnh độ cao của filler -->
 <script>
     function setFillerHeight() {
@@ -556,21 +537,6 @@
 
     window.addEventListener("load", setFillerHeight);
     window.addEventListener("resize", setFillerHeight);
-</script>
-<!-- Chỉnh độ cao của swiper  -->
-<script>
-    function adjustCarouselItemsHeight() {
-        const items = document.querySelectorAll(".carousel-item");
-        const viewportWidth = window.innerWidth;
-        const itemHeight = (4 / 9) * viewportWidth;
-
-        items.forEach((item) => {
-            item.style.height = itemHeight + "px";
-        });
-    }
-
-    window.addEventListener("load", adjustCarouselItemsHeight);
-    window.addEventListener("resize", adjustCarouselItemsHeight);
 </script>
 <!--back to top-->
 <script>
