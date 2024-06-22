@@ -1,0 +1,52 @@
+.blog-box .image img {
+    object-fit: cover;
+    height    : 260px
+}
+
+#events .card .card-body {
+    position: relative
+}
+
+#events .card .card-body .date {
+    background-color: #d61c62;
+    top             : -25px;
+    color           : #fff;
+    left            : 15px;
+    min-height      : 48px;
+    min-width       : 48px;
+    position        : absolute;
+    text-align      : center;
+    font-size       : 20px;
+    font-weight     : 700;
+    text-transform  : uppercase
+}
+
+#events .card .card-body .date span {
+    display    : block;
+    line-height: 24px
+}
+
+#events .card .card-body .date .month {
+    font-size       : 14px;
+    background-color: rgba(0, 0, 0, .1)
+}
+
+.card .card-img img {
+    object-fit: cover
+}
+
+@media(max-width:575px) {
+    .blog-box .image img {
+        height: 230px
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .blog-box .image img {
+        height: 200px
+    }
+
+    #sidebar {
+        margin-top: 0
+    }
+}

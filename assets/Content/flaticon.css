@@ -1,0 +1,36 @@
+/*
+    Flaticon icon font: Flaticon
+    Creation date: 05/02/2018 22:23
+    */
+
+@font-face {
+    font-family: "Flaticon";
+    src        : url(../flaticon/Flaticon.eot);
+    src        : url(../flaticon/Flaticon.eot?#iefix) format("embedded-opentype"), url(../flaticon/Flaticon.woff) format("woff"), url(../flaticon/Flaticon.ttf) format("truetype");
+    font-weight: 400;
+    font-style : normal;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-style : normal;
+}
+
+.flaticon-veterinarian-hospital:before {
+    content: "\f141";
+}
+
+.flaticon-dog-2:before {
+    content: "\f189";
+}
+
+.flaticon-dog-18:before {
+    content: "\f117";
+}
+
+.flaticon-dog-1:before {
+    content: "\f18c";
+}

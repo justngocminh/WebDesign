@@ -1,0 +1,32 @@
+.adopt-card .adopt-image {
+    border-bottom: 0
+}
+
+#lstProduct .adoption-header a {
+    font-size  : 1rem;
+    font-weight: 500
+}
+
+#lstProduct .adopt-card li {
+    border : unset;
+    padding: 0
+}
+
+#lstProduct .adopt-card .shop-price h5 {
+    color: #d0021b
+}
+
+@media(max-width:575px) {
+    .btn-shoping {
+        margin-bottom: 1.5em
+    }
+
+    .btn-shoping a {
+        font-size: 12px;
+        padding  : 10px 15px
+    }
+
+    .adopt-card {
+        padding: 5px
+    }
+}
