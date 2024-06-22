@@ -1,7 +1,5 @@
-// Lấy tất cả các phần tử có lớp fade-in-up
 const fadeInUpElements = document.querySelectorAll(".fade-in-up");
 
-// Kiểm tra xem phần tử có nằm trong khung nhìn không
 function isInViewport(element) {
 	const rect = element.getBoundingClientRect();
 	return (
@@ -17,7 +15,6 @@ function isInViewport(element) {
 //     );
 // }
 
-// Hàm kích hoạt hiệu ứng
 function handleScroll() {
 	fadeInUpElements.forEach((element) => {
 		if (isInViewport(element)) {
