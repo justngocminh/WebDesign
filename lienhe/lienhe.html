@@ -155,26 +155,18 @@
             <label for="message"><h6>Nội dung</h6></label>
             <textarea id="message" name="message" rows="5" required></textarea>
             
-            <div class="recaptcha-container">
-                <!-- Add your reCAPTCHA widget here -->
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-            </div>
-            <div class="row mt-3">
-                <div class="m-auto g-recaptcha" data-sitekey="6LfWpckUAAAAACmmKSi3Zm8wF2LVH1h3-trdyO1O" 
-                data-callback="onReturnCallback"><div style="width: 304px; height: 78px;">
-                <div><iframe 
-                title="reCAPTCHA" width="304" height="78" role="presentation" name="a-g6vbdee43ama" 
-                frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin 
-                allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox 
-                allow-storage-access-by-user-activation" 
-                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfWpckUAAAAACmmKSi3Zm8wF2LVH1h3-trdyO1O&amp;co=aHR0cHM6Ly9oYW5vaXBldGFkb3B0aW9uLmNvbTo0NDM.&amp;hl=vi&amp;v=TqxSU0dsOd2Q9IbI7CpFnJLD&amp;size=normal&amp;cb=kezkrs159f80">
-                </iframe></div><textarea 
-                id="g-recaptcha-response" 
-                name="g-recaptcha-response" class="g-recaptcha-response" 
-                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
-                </textarea>
+            <div class="captcha-container">
+                <div class="captcha-checkbox">
+                    <input type="checkbox" id="not-robot" name="not-robot" onclick="handleCheckboxClick(event)">
+                    <label for="not-robot">Tôi không phải là người máy</label>
                 </div>
-                <iframe style="display: none;"></iframe></div>
+                <div class="captcha-logo">
+                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA Logo" width="20" height="20">
+                    <div>
+                        reCAPTCHA<br>
+                        Bảo mật - Điều khoản
+                    </div>
+                </div>
             </div>
             
             </form>
@@ -322,6 +314,21 @@
 <script src="header-footer-comp\header-and-footer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+<!--recapcha-->
+<script>
+    function handleCheckboxClick(event) {
+        const checkbox = event.target;
+        if (checkbox.checked) {
+            checkbox.classList.add('loading');
+            setTimeout(() => {
+                checkbox.classList.remove('loading');
+                checkbox.classList.add('checked');
+            }, 2000); // 2-second delay
+        } else {
+            checkbox.classList.remove('checked');
+        }
+    }
+</script>
 <!-- Swiper -->
 <script>
     const swiper = new Swiper(".mySwiper", {
