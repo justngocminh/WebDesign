@@ -1,0 +1,191 @@
+
+@media (min-width: 544px) and (max-width: 1024px) {
+    .slide-heading h1{
+        font-size: 2.125rem;
+        
+    }
+    .slide-heading {
+        left: 50px !important;
+    }
+    .container {
+        max-width: 720px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .col-3 {
+        max-width: 25%;
+    }
+
+    .col-sm-3 {
+        max-width: 27%;
+    }
+    .thongtin {
+        width: 740px !important;
+    }
+    .col-md-1 {
+        height: 180px !important;
+    }
+    .ung-ho h2 {
+        font-size: 1.75rem;
+        margin-top: 12px;
+    }
+    .col-9 {
+        max-width: 65%;
+    }
+    .ung-ho .col-3 {
+        display: contents;
+    }
+    svg {
+        height: 11px;
+    }
+    .col-10 {
+        max-width: 92.666666667%;
+    }
+    .content {
+        height: 1140.6px;
+    }
+    .col-lg-3 {
+        width: 33.33333333%;
+    }
+    .adopt-card {
+        padding: 10px;
+        height: 420.4px;
+    }
+    .adopt-img img {
+        height: 208px !important;
+    }
+    .row-adapt {
+        height: 1760.2px;
+    }
+    .pagination {
+        padding-top: 72px;
+    }
+}
+
+@media (max-width: 544px) {
+    .slide-bar{
+        width: 100%;
+        background-color: #fff;
+    }
+    .slide-heading h1 {
+        font-size: 1.7em !important;
+    }
+    .slide-bar .slide-heading {
+        inset: 233px 1039px 32.5px 56px;
+    }
+    .col-lg-5 {
+        max-width: 100%;
+    }
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .col-lg-7 {
+        max-width: 100%;
+    }
+    .thongtin {
+        padding-left: 10px;
+    }
+    .col-sm-3{
+        max-width: 30%;
+    }
+    .col-12 {
+        max-width: 100%;
+    }
+    .col-warning {
+        max-width: 3.33333333%;
+    }
+    .thongtin {
+        width: 430px !important;
+    }
+    .col-md-1 {
+        max-width: 80%;
+        margin-bottom: 10px;
+        height: 336px !important;
+       
+    }
+    .ung-ho h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .col-9 {
+        max-width: 100%;
+    }
+    .ung-ho .col-3 {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .mt-4.btn-animal-detail  {
+        text-align: center !important;
+    }
+    .col-md-8 {
+        max-width: 100%;
+    }
+    .content {
+        height: auto;
+    }
+    .col-lg-4 {
+        width: 100% !important;
+        padding-top: 15px;
+    }
+    h4 {
+        font-size: 1.45rem !important;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+    .col-10 > p {
+        margin-left: 8px;
+    }
+    .row .col-sm-4 {
+        width: 50% ;
+        padding-top: 15px;
+    }
+    .col-lg-8 {
+        max-width: 100%;
+        
+    }
+    .col-lg-8 h3 {
+        font-size: 1.75rem;
+    }
+    .col-lg-8 p {
+        font-size: 0.8rem;
+       
+    }
+    .section-heading h2 {
+        font-size: 1.65rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 5px 5px;
+    }
+    .col-lg-3 {
+        width: 50%;
+        padding: 0;
+        margin-right: 0;
+        height: 365.4px;
+    }
+    .adopt-card {
+        padding: 5px;
+    }
+    .adopt-img img {
+        height: 180px !important;
+    }
+    .row-adapt {
+        height: 1462.2px !important;
+    }
+    .page-item {
+        width: 32px;
+    } 
+    .page-item a {
+        font-size: .8rem;
+    }
+    .pagination {
+        padding-top: 48px;
+    }
+}
